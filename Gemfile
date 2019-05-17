@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby IO.read(File.expand_path("#{File.dirname(__FILE__)}/.ruby-version")).strip
+ruby "~> #{IO.read(File.expand_path("#{File.dirname(__FILE__)}/.ruby-version")).strip}"
 
 gem "octokit"
 gem "omniauth-github"
